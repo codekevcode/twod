@@ -1,2 +1,24 @@
 <h1>Pages#index</h1>
 <p>Find me in app/views/pages/index.html.erb</p>
+<div class="container-fluid">
+    
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><%=image_tag("montreal.jpg", alt: "Example Image", class:"img-responsive center-block img-rounded")%></div>
+        <div class="swiper-slide"><%=image_tag("new-york.jpg", alt: "Example Image", class:"img-responsive center-block img-rounded")%></div>
+        <div class="swiper-slide"><%=image_tag("shanghai.jpg", alt: "Example Image", class:"img-responsive center-block img-rounded")%></div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+</div>
