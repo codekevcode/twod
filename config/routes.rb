@@ -4,13 +4,17 @@ Rails.application.routes.draw do
   get 'pages/about'
 
   get 'pages/services'
+  
+  get 'pages/cart'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
- root 'pages#index'
 
+  root 'checkouts#new'
+
+  resources :checkouts,  only: [:new, :create, :show]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

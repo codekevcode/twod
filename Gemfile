@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+
+
+gem 'braintree'
+gem 'figaro'
+gem 'dotenv-rails', :groups => [:development, :test]
 gem 'starter_generators'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
